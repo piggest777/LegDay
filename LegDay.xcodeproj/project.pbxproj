@@ -9,25 +9,66 @@
 /* Begin PBXBuildFile section */
 		B575B5B6234B42FC0038DA14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575B5B5234B42FC0038DA14 /* AppDelegate.swift */; };
 		B575B5B8234B42FC0038DA14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575B5B7234B42FC0038DA14 /* SceneDelegate.swift */; };
-		B575B5BA234B42FC0038DA14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575B5B9234B42FC0038DA14 /* ViewController.swift */; };
+		B575B5BA234B42FC0038DA14 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575B5B9234B42FC0038DA14 /* WorkoutVC.swift */; };
 		B575B5BD234B42FC0038DA14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B575B5BB234B42FC0038DA14 /* Main.storyboard */; };
 		B575B5BF234B42FD0038DA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B575B5BE234B42FD0038DA14 /* Assets.xcassets */; };
 		B575B5C2234B42FD0038DA14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B575B5C0234B42FD0038DA14 /* LaunchScreen.storyboard */; };
+		B575B5D1234B4D110038DA14 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575B5D0234B4D110038DA14 /* IntentHandler.swift */; };
+		B575B5D5234B4D110038DA14 /* IntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B575B5CE234B4D110038DA14 /* IntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B575B5DE234B5C190038DA14 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575B5DD234B5C190038DA14 /* DataService.swift */; };
+		B575B5E0234B61280038DA14 /* DoubleEet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575B5DF234B61280038DA14 /* DoubleEet.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B575B5D3234B4D110038DA14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B575B5AA234B42FC0038DA14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B575B5CD234B4D110038DA14;
+			remoteInfo = IntentHandler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B575B5D9234B4D110038DA14 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B575B5D5234B4D110038DA14 /* IntentHandler.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B575B5B2234B42FC0038DA14 /* LegDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B575B5B5234B42FC0038DA14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B575B5B7234B42FC0038DA14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B575B5B9234B42FC0038DA14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B575B5B9234B42FC0038DA14 /* WorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutVC.swift; sourceTree = "<group>"; };
 		B575B5BC234B42FC0038DA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B575B5BE234B42FD0038DA14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B575B5C1234B42FD0038DA14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B575B5C3234B42FD0038DA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B575B5C9234B4B250038DA14 /* LegDay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LegDay.entitlements; sourceTree = "<group>"; };
+		B575B5CE234B4D110038DA14 /* IntentHandler.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentHandler.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B575B5D0234B4D110038DA14 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		B575B5D2234B4D110038DA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B575B5DD234B5C190038DA14 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		B575B5DF234B61280038DA14 /* DoubleEet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleEet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B575B5AF234B42FC0038DA14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B575B5CB234B4D110038DA14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				B575B5B4234B42FC0038DA14 /* LegDay */,
+				B575B5CF234B4D110038DA14 /* IntentHandler */,
 				B575B5B3234B42FC0038DA14 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				B575B5B2234B42FC0038DA14 /* LegDay.app */,
+				B575B5CE234B4D110038DA14 /* IntentHandler.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +99,51 @@
 		B575B5B4234B42FC0038DA14 /* LegDay */ = {
 			isa = PBXGroup;
 			children = (
+				B575B5DC234B5BF60038DA14 /* Ext */,
+				B575B5DB234B5BEC0038DA14 /* Services */,
+				B575B5DA234B5BD10038DA14 /* Controller */,
+				B575B5C9234B4B250038DA14 /* LegDay.entitlements */,
 				B575B5B5234B42FC0038DA14 /* AppDelegate.swift */,
 				B575B5B7234B42FC0038DA14 /* SceneDelegate.swift */,
-				B575B5B9234B42FC0038DA14 /* ViewController.swift */,
 				B575B5BB234B42FC0038DA14 /* Main.storyboard */,
 				B575B5BE234B42FD0038DA14 /* Assets.xcassets */,
 				B575B5C0234B42FD0038DA14 /* LaunchScreen.storyboard */,
 				B575B5C3234B42FD0038DA14 /* Info.plist */,
 			);
 			path = LegDay;
+			sourceTree = "<group>";
+		};
+		B575B5CF234B4D110038DA14 /* IntentHandler */ = {
+			isa = PBXGroup;
+			children = (
+				B575B5D0234B4D110038DA14 /* IntentHandler.swift */,
+				B575B5D2234B4D110038DA14 /* Info.plist */,
+			);
+			path = IntentHandler;
+			sourceTree = "<group>";
+		};
+		B575B5DA234B5BD10038DA14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B575B5B9234B42FC0038DA14 /* WorkoutVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B575B5DB234B5BEC0038DA14 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B575B5DD234B5C190038DA14 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B575B5DC234B5BF60038DA14 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				B575B5DF234B61280038DA14 /* DoubleEet.swift */,
+			);
+			path = Ext;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +156,34 @@
 				B575B5AE234B42FC0038DA14 /* Sources */,
 				B575B5AF234B42FC0038DA14 /* Frameworks */,
 				B575B5B0234B42FC0038DA14 /* Resources */,
+				B575B5D9234B4D110038DA14 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B575B5D4234B4D110038DA14 /* PBXTargetDependency */,
 			);
 			name = LegDay;
 			productName = LegDay;
 			productReference = B575B5B2234B42FC0038DA14 /* LegDay.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B575B5CD234B4D110038DA14 /* IntentHandler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B575B5D6234B4D110038DA14 /* Build configuration list for PBXNativeTarget "IntentHandler" */;
+			buildPhases = (
+				B575B5CA234B4D110038DA14 /* Sources */,
+				B575B5CB234B4D110038DA14 /* Frameworks */,
+				B575B5CC234B4D110038DA14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentHandler;
+			productName = IntentHandler;
+			productReference = B575B5CE234B4D110038DA14 /* IntentHandler.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +196,9 @@
 				ORGANIZATIONNAME = "Denis Rakitin";
 				TargetAttributes = {
 					B575B5B1234B42FC0038DA14 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B575B5CD234B4D110038DA14 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
@@ -116,6 +217,7 @@
 			projectRoot = "";
 			targets = (
 				B575B5B1234B42FC0038DA14 /* LegDay */,
+				B575B5CD234B4D110038DA14 /* IntentHandler */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +233,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B575B5CC234B4D110038DA14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +247,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B575B5BA234B42FC0038DA14 /* ViewController.swift in Sources */,
+				B575B5BA234B42FC0038DA14 /* WorkoutVC.swift in Sources */,
 				B575B5B6234B42FC0038DA14 /* AppDelegate.swift in Sources */,
+				B575B5E0234B61280038DA14 /* DoubleEet.swift in Sources */,
 				B575B5B8234B42FC0038DA14 /* SceneDelegate.swift in Sources */,
+				B575B5DE234B5C190038DA14 /* DataService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B575B5CA234B4D110038DA14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B575B5D1234B4D110038DA14 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B575B5D4234B4D110038DA14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B575B5CD234B4D110038DA14 /* IntentHandler */;
+			targetProxy = B575B5D3234B4D110038DA14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B575B5BB234B42FC0038DA14 /* Main.storyboard */ = {
@@ -283,10 +410,13 @@
 		B575B5C7234B42FD0038DA14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LegDay/LegDay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83G4KB5W5L;
 				INFOPLIST_FILE = LegDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,16 +431,57 @@
 		B575B5C8234B42FD0038DA14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LegDay/LegDay.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83G4KB5W5L;
 				INFOPLIST_FILE = LegDay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "funny-farm.LegDay";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B575B5D7234B4D110038DA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83G4KB5W5L;
+				INFOPLIST_FILE = IntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "funny-farm.LegDay.IntentHandler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B575B5D8234B4D110038DA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83G4KB5W5L;
+				INFOPLIST_FILE = IntentHandler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "funny-farm.LegDay.IntentHandler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +504,15 @@
 			buildConfigurations = (
 				B575B5C7234B42FD0038DA14 /* Debug */,
 				B575B5C8234B42FD0038DA14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B575B5D6234B4D110038DA14 /* Build configuration list for PBXNativeTarget "IntentHandler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B575B5D7234B4D110038DA14 /* Debug */,
+				B575B5D8234B4D110038DA14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

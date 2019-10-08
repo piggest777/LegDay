@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Intents
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,6 +19,38 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+    }
+    
+    
+    
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        
+        print(userActivity.interaction?.intent)
+        
+        if let startIntent = userActivity.interaction?.intent as? INStartWorkoutIntent {
+             DataService.instance.startWorkoutIntent = startIntent
+            NotificationCenter.default.post(name: NSNotification.Name("workoutStartedNotification"), object: nil)
+        } else if ((userActivity.interaction?.intent as? INEndWorkoutIntent) != nil) {
+            NotificationCenter.default.post(name: NSNotification.Name("stopWorkoutNotification"), object: nil)
+        } else if let _ = userActivity.interaction?.intent as? INPauseWorkoutIntent{
+            NotificationCenter.default.post(name: NSNotification.Name("pauseWorkoutNotification"), object: nil)
+        } else if let _ = userActivity.interaction?.intent as? INResumeWorkoutIntent {
+            NotificationCenter.default.post(name: NSNotification.Name("resumeWorkoutNotification"), object: nil)
+        } else {
+             preconditionFailure("Trying to handle unknown intent type")
+        }
+//        guard let startIntent = userActivity.interaction?.intent as? INStartWorkoutIntent else {
+//            print("SCENEDELEGATE: Start workout intent - FALSE")
+//            return
+//        }
+        
+        
+//        DataService.instance.startWorkoutIntent = startIntent
+        
+//        NotificationCenter.default.post(name: NSNotification.Name("workoutStartedNotification"), object: nil)
+        
+//        print("SCENEDELEGATE: Start workout intent - TRUE")
+//        print(startIntent)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
